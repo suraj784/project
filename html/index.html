@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+  <H3>Form</H3>
+  <style>
+    body
+    {
+      background-color: blanchedalmond;
+    }
+  </style>
+</head>
+<body>
+  <form action="./display.html">
+  <label for="name">Name</label>
+  <input type="text" id="name" placeholder="Enter Full Name">
+  <br><br>
+
+  <label for="num">Ph-number</label>
+  <input type="number" id="num" placeholder="Phone Number" max="99">
+  <br><br>
+
+  <label for="pass">Password <span style="color: red;font-size: 15px;">*</span></label>
+  <input type="password" id="pass" required placeholder="Password">
+  <br><br>
+
+  <label for="date">Date Of Birth</label>
+  <input type="date" id="date" placeholder="Date Of Birth">
+  <br><br>
+
+  <label for="mail">Email</label>
+  <input type="email" id="mail" placeholder=".com">
+  <br><br>
+
+  <label>Gender :</label>
+  <input type="radio" name="gender" id="male" value="Male">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="female" value="Female">
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="others" value="others">
+  <label for="other">others</label>
+  <br><br>
+
+  <label for="lang">Language :</label>
+  <input type="checkbox" name="language" checked id="eng" value="English">
+  <label for="eng">English</label>
+  <input type="checkbox" name="language" id="hind" value="Hindi">
+  <label for="hind">Hindi</label>
+  <input type="checkbox" name="language" id="mar" value="Marathi">
+  <label for="mar">Marathi</label>
+  <br><br>
+
+  <label for="count">Country :</label>
+  <select name="Country" id="count">
+    <option selected disabled>Please Select a Country</option>
+    <option value="India">India</option>
+    <option value="Sri Lanka">Sri Lanka</option>
+    <option value="Japan">Japan</option>
+    <option value="Austria">Austria</option>
+    <option value="Germany">Germany</option>
+  </select>
+  <br><br>
+
+  <button>Submit-btn</button>
+  <input type="submit" value="Submit-inp">
+  <input type="reset" value="reset">
+</form>
+</body>
+</html>

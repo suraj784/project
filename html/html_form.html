@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="./display.html" validate oninput="sum.value=parseInt(a.value)+parseInt(b.value)">
+      <label for="name">Full Name</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter Full Name"
+        autocomplete="on"
+      />
+      <br /><br />
+      <label for="pass">Password</label>
+      <input type="password" id="pass" autofocus /><br /><br />
+      <label for="appointment">Set a time</label><br /><br />
+      <input type="time" id="appointment" /><br /><br />
+      <label for="color">Select a color</label>
+      <input type="color" id="color" /><br /><br />
+      <label for="mail">Email</label>
+      <input type="email" id="mail" /><br /><br />
+      <label for="telephone">Telephone</label>
+      <input type="tel" id="telephone" required /><br /><br />
+      <label for="profile_url">Profile URL</label>
+      <input type="url" id="profile_url" /><br /><br />
+      <label for="resume">Resume</label>
+      <input type="file" id="resume" /><br /><br />
+      <label for="image">Uplode Image</label>
+      <input type="file" id="image" multiple /><br /><br />
+      <h4>Datalist tag example</h4>
+      <label for="count">Country</label>
+      <input list="list_country" id="count">
+      <datalist id="list_country">
+        <option value="India">India</option>
+        <option value="Japan">Japan</option>
+        <option value="Germany">Germany</option>
+      </datalist><br><br>
+      <h4>Output tag example</h4>
+      <!--<form oninput="sum.value=parseInt(a.value)+parseInt(b.value)">-->
+        <input type="number" id="a" value="66"> +
+        <input type="number" id="b" value="10"> =
+        <output name="sum" for="a b"></output> <br><br>
+      
+      <button>submit</button>
+      <input type="reset" />
+    </form>
+  </body>
+</html>
